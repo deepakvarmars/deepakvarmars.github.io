@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<body bgcolor="#fffff">
+<body bgcolor="#E6E6FA">
 <body link="#ff0000" vlink="#ff0000" alink="#ff0000">
 This is a website under test <br>
 OpenMPI is worse than MPICH : causes memory bleeds<br>
-Click <a href="https://www.mcs.anl.gov/petsc">here</a> to go to PETSc website<br><br>
+Click <a href="https://www.mcs.anl.gov/petsc" target="_blank">here</a> to go to PETSc website<br><br>
 <h4 style="background-color:DodgerBlue;">Using Spack</h4>
 
 <font color="#rrggbb">spack list</font>                : To list all available packages<br>
 <font color="#rrggbb">spack find</font>                : To list all installed packages<br>
 <font color="#rrggbb">spack install "package"</font>   : To install a package<br>
 <font color="#rrggbb">spack spec "package"</font>      : To find the dependencies of a package with their version number<br>
+<font color="#rrggbb">spack info "package"</font>      : To show complete information regarding a package<br>
 <font color="#rrggbb">spack uninstall "package"</font> : To uninstall a package<br>
-<font color="#rrggbb">spack uninstall --all</font>     : To uninstall all installed packages<br><br>
-
-If there are any issues after installation, it  is better to delete spack and restart as the cache contains all the downloaded scientific packages. So installation would give the exact same issues.<br><br>
+<font color="#rrggbb">spack uninstall --all</font>     : To uninstall all installed packages<br>
+<font color="#rrggbb">spack purge --downloads</font>   : To delete all tarballs from cache after installation<br><br>
 
 <h4 style="background-color:DodgerBlue;">Mounting exFAT formatted HDDs on Linux machine</h4>
-Since exFAT is the only unrestricted format that can be used on both macOS and Windows 10, it is good to change the format of an external HDD (using Disk Manager in Windows or Disk Utility in MacOS). However, this doesn't mount on Ubuntu Linux 17.10 in default settings. To access exFAT HDD in Linux, do the following:<br> 
+Since exFAT is the only unrestricted format that can be used on both macOS and Windows 10, it is good to change the format of an external HDD (using Disk Manager in Windows or Disk Utility in MacOS). However, this doesn't mount on Ubuntu Linux 17.10 in default settings. To access exFAT HDD in Linux, do the following:<br><br> 
 sudo apt-get install exfat-fuse exfat-utils<br>
-sudo mkdir /media/exfat <br>
-sudo mount -t exfat /dev/sdxx /media/exfat <br><br>
-If you don't know if sdxx = sda1 or sdb1 etc, try:<br>
-sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL<br>
+Disclaimer : This external HDD would work on Windows 10, MacOS 10.12.6, Ubuntu Linux 17.10<br><br>
+
+<h4 style="background-color:DodgerBlue;">Vim on MacOS</h4>
+Beginning of line : 0 (Zero)<br>
+End of line : $<br>
+
+
+
+<h4 style="background-color:DodgerBlue;">GeForce GT755M specs</h4>
+Memory size        : 2048 MB   <br>
+No.of Cores        : 384       <br>
+GPU clock speed    : 980 MHz   <br>
+<br>
+Reference : Click <a href="https://www.techpowerup.com/gpudb/2420/geforce-gt-755m" target="_blank">here</a> 
+
+
+
 </html>
