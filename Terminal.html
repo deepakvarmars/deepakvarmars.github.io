@@ -1,0 +1,15 @@
+<html>
+<title>Deepak's Website</title>
+<h3>Terminal Commands</h3>
+<h3><font color="#rrggbb">sed</font> </h3>
+<font color = "#FF0000">S</font>tream <font color = "#FF0000">ed</font>itor<br> 
+Used to search and replace particular string or to print all lines containing a string (similar to grep).<br>
+Examples:<br>
+To print lines containing string: sed -n '/'u, v'/p' log.txt > error.txt <br>
+To search and replace string    : sed 's/oldstring/newstring/' log.txt > error.txt <br>
+
+<h3><font color="#rrggbb">awk</font> </h3>
+Used to analyze data from data files organised in rows and columns<br>
+Examples:<br>
+To print specific columns (no. 3,4,5) : awk '{print $3,$4,$5}' log.txt > error.txt 
+</html>
