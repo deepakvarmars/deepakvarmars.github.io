@@ -7,7 +7,7 @@ Used to search and replace particular string or to print all lines containing a 
 Examples:<br>
 To print lines containing string: sed -n '/u, v/p' log.txt > error.txt <br>
 To search and replace string    : sed 's/oldstring/newstring/' log.txt > error.txt <br>
-To delete lines containing string: sed -n '/u, v/d' log.txt > newlog.txt <br>
+To delete lines containing string: sed '/u, v/d' log.txt > newlog.txt <br>
 
 <h3><font color="#rrggbb">awk</font> </h3>
 Used to analyze data from data files organised in rows and columns<br>
