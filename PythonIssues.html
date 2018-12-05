@@ -1,0 +1,15 @@
+<html>
+<title>Deepak's Website</title>
+
+<h4>matplotlib</h4>
+By default, MacOS doesn't show the plots using plt.show(). <br>
+Include following lines at the start: <br>
+include matplotlib
+matplotlib.use('TKAgg')
+
+<h4>Warning for scipy</h4>
+Using numpy.linalg.inv maynot provide the correct result using <br>
+python3 in Anaconda3 package manager. For eg, try <br>
+A = numpy.linalg.inv(numpy.matrix('1,2,3;4,5,6;7,8,9')) <br>
+The above is applicable to python version 3.6.3 in MacOS <br>
+</html>
